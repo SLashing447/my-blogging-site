@@ -5,10 +5,30 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>blogging</title>
-    <link rel="stylesheet" href="./src/styles/global.css" />
+
+    <style>
+      @import url("./src/styles/components.css");
+      @import url("./src/styles/global.css");
+
+      @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap");
+    </style>
+    <!-- <link rel="stylesheet" href="./src/styles/global.css" /> -->
   </head>
   <body>
-    <div class="nav">hello wrold</div>
+    <nav class="nav">
+      <div class="main">
+        <span class="logo">[ψ]</span>
+        <div class="options">
+          <a href="Notes">notes</a>
+          <a href="Papers">papers</a>
+          <a href="Code">Programes</a>
+          <a href="/">about</a>
+        </div>
+      </div>
+      <span class="contact">[@]</span>
+    </nav>
+
+    <main id="main"></main>
     <script type="module" src="/src/scripts/main.ts"></script>
   </body>
 </html>
